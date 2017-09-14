@@ -1,0 +1,317 @@
+﻿body {
+background-repeat:no-repeat;
+background-size: cover;
+	font-size:80%;
+}
+.header-button button {
+padding: 8px 15px;
+margin: 2px 6px 4px auto;
+width: 100px;
+cursor: pointer;
+text-align: center;
+background: #9999FF;
+border: #5273b5 1px solid;
+box-shadow: 2px 2px 0 rgba(0,0,0,.15);
+color: #fff;
+border-radius: 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+float:right;
+height:50px;
+box-shadow: 10px 10px 5px #888888;
+}
+.header-button button:active {
+  transform: translateY(5px);
+}
+
+h1{
+ background:#CCFF99; 
+ padding:2px;
+
+}
+
+.paging{
+	float:right
+}
+
+input[type="search"] {
+  height: 40px;
+  width: 300px;
+border-radius:25px;
+padding:15px;
+box-shadow: 10px 10px 5px #888888;
+
+}
+
+.search-box button{
+height:40px;
+width:150px;
+background:#dddddd;
+border-radius:25px;
+box-shadow: 10px 10px 5px #888888;
+}
+
+.search-box button:active {
+  transform: translateY(10px);
+  
+}
+
+.search-box {
+padding-left:720px;
+   padding-top: 50px;
+}
+
+.pageatari{
+	float:left
+}
+
+.list-syllabary-ja {
+  display: flex;
+  flex-flow: row wrap;
+  writing-mode: vertical-lr;
+  width: 370px;
+  height: 160px;
+list-style: none;
+margin: 20px auto;
+}
+.list-syllabary-ja li {
+  margin: 2.9px 0 16px 15px;
+  width: 28px;
+}
+
+.list-syllabary-ja li.next-kana-empty {
+  margin-bottom: 48px;
+}
+
+.return button{
+height:40px;
+width:80px;
+background:#ADFF2F;
+border-radius:15px;
+box-shadow: 10px 10px 5px #888888;
+text-align: center;
+margin: 50px 0 1px 10px;
+border-color:#E0FFFF;
+}
+
+.return button:active {
+  transform: translateY(10px);
+}
+#search-detail
+  {
+  border-collapse:collapse;  
+  
+  }
+.search-detail{
+  background-color:#DCDCDC;
+  
+}
+
+#search-detail td, #search-detail th 
+  {
+  border:2px solid #000000;
+  padding:10px 20px 15px 20px;
+  }
+
+#search-detail th 
+  {
+
+  text-align:left;
+  padding-top:18px;
+  padding-bottom:15px;
+  }
+#search-detail tr.alt td 
+  {
+  color:#000000;
+  background-color:#EAF2D3;
+  }
+
+.meter{
+width:30%;
+}
+.tokumei{
+  background-color:#EAF2D3;
+}
+.tokumei{
+    display: inline-block;
+    background-color:#E0FFFF;
+    width: 500px ;
+    height: 100px;
+    text-align:left
+}
+.review button{
+height:40px;
+width:150px;
+background:#ADFF2F;
+border-radius:10px;
+box-shadow: 10px 10px 10px #888888;
+float:right;
+}
+.review button:active {
+  transform: translateY(10px);
+}
+
+/****必須****/
+.required-tx{
+    margin: 0 8px 5px;
+    text-align: right;
+}
+.required-tx img {
+    display: inline-block;
+    width: 10px;
+    margin: 0 4px 0 0;
+    vertical-align: middle;
+}
+
+
+/***** Detail *****/
+fieldset {
+border: none;
+margin: 0;
+padding: 0;
+}
+.mdl-inset {
+width: 55%;
+display: table;
+margin: -1px 0 0 0;
+}
+.mdl-inset > dt {
+display: table-cell;
+width: 18%;
+padding: 5px 16px;
+margin: 0;
+background: #F0F0F0;
+border: 1px solid #ccc;
+box-sizing: border-box;
+text-align: left;
+vertical-align: middle;
+font-weight: bold;
+}
+.mdl-inset > dd {
+padding: 7px 10px;
+display: table-cell;
+vertical-align: middle;
+width: 50%;
+background: #FFF;
+border-top: 1px solid #ccc;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+
+/*****languageselect*****/
+.select select{
+    border: none;
+
+    width: 15%;
+    height: 40px;
+border: 2px solid #ccc;
+}
+
+.form-post input{
+    width: 8%;
+    height:30px;
+}
+
+.select input{
+    width: 30%;
+    height:35px;
+}
+
+/*****yearselect*****/
+.selectyear select{
+    border: none;
+
+    width: 10%;
+    height: 40px;
+border: 2px solid #ccc;
+}
+
+/*****newpage****/
+.mdl-inset-page {
+width: 80%;
+display: table;
+margin: -1px 0 0 0;
+}
+.mdl-inset-page > dt {
+display: table-cell;
+width: 15%;
+padding: 2px 6px;
+margin: 0;
+background: #F0F0F0;
+border: 1px solid #ccc;
+
+box-sizing: border-box;
+text-align: left;
+vertical-align: middle;
+font-weight: bold;
+}
+.mdl-inset-page > dd {
+padding: 2px 5px;
+display: table-cell;
+vertical-align: middle;
+width: 40%;
+
+background: #FFF;
+border-top: 1px solid #ccc;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+
+/*****情報*****/
+.information a{
+font-size:50%;
+}
+
+/*****会社名*****/
+.form-text input{
+    width: 75%;
+    height:30px;
+}
+
+/*****役職*****/
+.form-text-position input{
+    width: 40%;
+    height:30px;
+}
+
+/*****代表取締役*****/
+.form-text-ceo input{
+    width: 20%;
+    height:30px;
+}
+
+/*****資本金*****/
+.form-text-capital input{
+    width: 15%;
+    height:30px;
+}
+
+/*****設立年月*****/
+.form-text-date input{
+    width: 13%;
+    height:30px;
+}
+
+/*****電話番号*****/
+.form-text-num input{
+    width: 11%;
+    height:30px;
+}
+
+/*****メールアドレス*****/
+.form-text-mail input{
+    width: 35%;
+    height:30px;
+}
+
+/*****パスワード*****/
+.form-text-paw input{
+    width: 25%;
+    height:30px;
+}
+
+/*****ユーザ名*****/
+.form-text-user input{
+    width: 25%;
+    height:30px;
+}
