@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>NewPage</title>
+<link rel="stylesheet" type="text/css" href="css/t_common.css">
+<link rel="stylesheet" type="text/css" href="css/t_pc.css">
+<script src="js/ajaxzip3-source.js" charset="UTF-8"></script>
+
+</head>
+
+<body>
+<div class="wrap-all">
+<header class="header-wrap">
+ <div class="header-button">
+   <button name="logout" id="logout" onclick="location.href='login.html'" >ログイン</button>
+   <button name="mypage" id="mypage" >ホーム</button>
+</div>
+</header>
+<br></br>
+ <div class="title-area">
+<h1>新規ユーザ登録</h1>
+</div>
+<div class="required-tx">
+ <img src="./img/ic_req.png" alt="必須">=必須
+</div>
+<a class="information">会社基本情報</a>
+  <!--基本情報-->
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>会社名
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+<br></br>
+<a>※最大50文字以内に入力してください。</a>
+</dt>
+<dd>
+<fieldset class="form-text">
+<div class="clearfix">
+<label>
+<input type="text" name="" value="">
+</label>
+</div>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>頭文字
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span></dt>
+<dd>
+<fieldset class="select" >
+  <select id="language" name="" onchange="language()">
+    <option value="ja" selected>お選び下さい</option>
+    <option value="あ">あ</option>
+    <option value="い">い</option>
+  </select>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>役職
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+</dt>
+<dd>
+<fieldset class="form-text-position">
+<div class="clearfix">
+<label>
+<input type="text" name="" value="">
+</label>
+</div>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>代表取締役
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+</dt>
+<dd>
+<fieldset class="form-text-ceo">
+<div class="clearfix">
+<label>
+<input type="text" name="" value="">
+</label>
+</div>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>資本金
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+</dt>
+<dd>
+<fieldset class="form-text-capital">
+<div class="clearfix">
+<label>
+<input type="text" name="" value="">
+</label>
+</div>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>設立年月
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+</dt>
+<dd>
+<fieldset class="selectyear" >
+  <select id="year" name="" onchange="year()">
+    <option value="year" selected>年</option>
+    <option value="1900">1900年</option>
+    <option value="1901">1901年</option>
+  </select>
+  <select id="month" name="" onchange="month()">
+    <option value="month" selected>月</option>
+    <option value="1900">1月</option>
+    <option value="1901">2月</option>
+  </select>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>電話番号
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+</dt>
+<dd>
+<fieldset class="form-text-num">
+<div class="clearfix">
+<label>
+<input type="text" name="" value="">
+</label>
+</div>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>郵便番号
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+</dt>
+<dd>
+<fieldset class="form-post">
+<div class="clearfix">
+<label>
+   〒<input type="text" name="yubin11" maxlength="3" placeholder="例103" >
+   - <input type="text" name="yubin12" maxlength="4" placeholder="0015" onKeyUp="AjaxZip3.zip2addr('yubin11','yubin12','region11','addr11');"><br />
+</label>
+</div>
+
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>住所
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span></dt>
+<dd>
+<fieldset class="select" >
+<select id="region11" name="region11">
+	<option value="">----</option>
+	<option value="北海道">北海道</option>
+	<option value="青森県">青森県</option>
+	<option value="岩手県">岩手県</option>
+	<option value="宮城県">宮城県</option>
+	<option value="秋田県">秋田県</option>
+	<option value="山形県">山形県</option>
+	<option value="福島県">福島県</option>
+	<option value="茨城県">茨城県</option>
+	<option value="栃木県">栃木県</option>
+	<option value="群馬県">群馬県</option>
+	<option value="埼玉県">埼玉県</option>
+	<option value="千葉県">千葉県</option>
+	<option value="東京都">東京都</option>
+	<option value="神奈川県">神奈川県</option>
+	<option value="新潟県">新潟県</option>
+	<option value="富山県">富山県</option>
+	<option value="石川県">石川県</option>
+	<option value="福井県">福井県</option>
+	<option value="山梨県">山梨県</option>
+	<option value="長野県">長野県</option>
+	<option value="岐阜県">岐阜県</option>
+	<option value="静岡県">静岡県</option>
+	<option value="愛知県">愛知県</option>
+	<option value="三重県">三重県</option>
+	<option value="滋賀県">滋賀県</option>
+	<option value="京都府">京都府</option>
+	<option value="大阪府">大阪府</option>
+	<option value="兵庫県">兵庫県</option>
+	<option value="奈良県">奈良県</option>
+	<option value="和歌山県">和歌山県</option>
+	<option value="鳥取県">鳥取県</option>
+	<option value="島根県">島根県</option>
+	<option value="岡山県">岡山県</option>
+	<option value="広島県">広島県</option>
+	<option value="山口県">山口県</option>
+	<option value="徳島県">徳島県</option>
+	<option value="香川県">香川県</option>
+	<option value="愛媛県">愛媛県</option>
+	<option value="高知県">高知県</option>
+	<option value="福岡県">福岡県</option>
+	<option value="佐賀県">佐賀県</option>
+	<option value="長崎県">長崎県</option>
+	<option value="熊本県">熊本県</option>
+	<option value="大分県">大分県</option>
+	<option value="宮崎県">宮崎県</option>
+	<option value="鹿児島県">鹿児島県</option>
+	<option value="沖縄県">沖縄県</option>
+  </select>
+   <input class="addrtext" type="text" name="addr11"><br />
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>主な事業内容
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+</dt>
+<dd>
+<fieldset class="majortxt">
+<div class="major-text">
+<textarea name="" rows="10" id="" onKeyUp="countLength(value, 'textlength');"></textarea>
+</div>
+<label>
+<a  class="maxlengthinfo">※全角1000文字以内に入力してください。</a>
+</label>
+</fieldset>
+</dd>
+</dl>
+
+<!-- /.mdl-inset-page -->
+<!--ログイン情報-->
+<br></br>
+<a class="information">ログイン情報</a>
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>メールアドレス
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+<br></br>
+<a>※ログインユーザIDとして使用します。</a>
+</dt>
+<dd>
+<fieldset class="form-text-mail">
+<div class="clearfix">
+<label>
+<input type="text" name="" value="" placeholder="御社の企業メールアドレスのみ入力可能です。">
+</label>
+</div>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>パスワード
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+</dt>
+<dd>
+<fieldset class="form-text-paw">
+<label>
+<input type="password" name="" value="">
+</label>
+<p></p>
+<label>
+<input type="password" name="" value="" placeholder="もう一度入力してください。">
+
+</label>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+<dl class="mdl-inset-page mdl-folder-name">
+<dt>ユーザ名
+<span class="required-tx">
+<img src="./img/ic_req.png" alt="必須">
+</span>
+<br></br>
+<a>※最大20文字以内に入力してください。</a>
+</dt>
+<dd>
+<fieldset class="form-text-user">
+<div class="clearfix">
+<label>
+<input type="text" name="" value="">
+</label>
+</div>
+</fieldset>
+</dd>
+</dl><!-- /.mdl-inset-page -->
+<div class="insert-button">
+   <button name="submit" value="" >登録</button>
+</div><!-- /.upd-btn -->
+</div>
+</body>
